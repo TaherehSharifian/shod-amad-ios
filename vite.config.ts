@@ -11,23 +11,24 @@ export default defineConfig({
         name: "SHODAMAD App",
         short_name: "SHODAMAD",
         description: "ریوا سرویس شدآمد",
-        id: "/",
-        start_url: "/",
+        id: "./",
+        start_url: "./",
         display: "standalone",
         theme_color: "#000000",
         background_color: "#ffffff",
         icons: [
           {
-            src: "/icons/shodamad-192.png",
+            src: "icons/shodamad-192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/icons/shodamad-512.png",
+            src: "icons/shodamad-512.png",
             sizes: "512x512",
             type: "image/png",
           },
         ],
+
         screenshots: [],
       },
       workbox: {
