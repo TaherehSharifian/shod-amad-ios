@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-light: #57d1eb;
+  --color-primary-main: #2ebede;
+  --color-primary-dark: #1d8597;
+  --color-primary-lighter: #e2f3f7;
+  --color-primary-contrastText: #fff;
+
+  --color-secondary-light: #fbc336;
+  --color-secondary-main: #f48320;
+  --color-secondary-dark: #e15b08;
+  --color-secondary-contrastText: #fff;
+
+  --color-success-main: #09b080;
+  --color-success-light: #cffdef;
+  --color-success-contrastText: #fff;
+
+  --color-error-main: #d54e69;
+  --color-error-contrastText: #fff;
+
+  --color-warning-main: #faa205;
+  --color-warning-contrastText: #fff;
+
+  --color-info-main: #3095b2;
+  --color-info-contrastText: #fff;
+
+  --color-app-bar-background: rgba(205, 210, 232, 0.7);
+
+  --color-google-color-blue: #4285f4;
+  --color-google-color-red: #db4437;
+  --color-google-color-yellow: #f4b400;
+  --color-google-color-green: #0f9d58;
+  --color-google-color-purple: #673ab7;
+}
+
+body {
+  margin: 0;
+  font-family: "Yekan-Bakh", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100dvh;
+  direction: rtl;
+  text-align: right;
+}
+#root {
+  direction: rtl;
+  text-align: right;
+}
+
+.MuiTypography-root {
+  text-align: right !important;
+}
+
+.MuiInputBase-input {
+  text-align: right;
+}
+
+.MuiInputLabel-root {
+  right: 0 !important;
+  left: auto !important;
+  transform-origin: top right !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  text-align: right !important;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@font-face {
+  font-family: "Yekan-Bakh";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Yekan-Bakh/Yekan Bakh EN 03 Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yekan-Bakh";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Yekan-Bakh/Yekan\ Bakh\ EN\ 04\ Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yekan-Bakh";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Yekan-Bakh/Yekan\ Bakh\ EN\ 05\ Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yekan-Bakh";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Yekan-Bakh/Yekan\ Bakh\ EN\ 06\ Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yekan-Bakh";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Yekan-Bakh/Yekan\ Bakh\ EN\ 07\ Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yekan-Bakh";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/Yekan-Bakh/Yekan\ Bakh\ EN\ 08\ Fat.woff") format("woff");
+}
+
+@font-face {
+  font-family: "B Titr";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/B Titr/B Titr Bold.ttf") format("truetype");
+}
+input:focus {
+  outline: none;
+}
+
+.ag-theme-quartz {
+  /* --ag-foreground-color: rgb(126, 46, 132);
+  --ag-background-color: rgb(249, 245, 227);
+  --ag-header-foreground-color: rgb(204, 245, 172);
+  --ag-header-background-color: rgb(209, 64, 129);
+  --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+  --ag-header-column-resize-handle-color: rgb(126, 46, 132); */
+
+  --ag-font-size: 15px;
+  --ag-font-family: "Yekan-Bakh", monospace;
+}
+
+/* react slick css */
+.slick-slide > div {
+  margin: 0 3px; /* This adds the gap between slides */
+}
+
+.slick-list {
+  margin: 0 -3px;
+}
+
+/* .slick-slide > div > div { 
+  width: calc(100% - 3px); 
+} */
+/* react slick css */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: 1;
+  transform-origin: center;
+}
+
+.shake-element {
+  animation: shake 0.5s ease-in-out;
+  display: block;
+}
